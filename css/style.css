@@ -53,17 +53,14 @@ body .header {
   border-radius: 5px;
   margin: 0 12px;
   cursor: pointer;
-}
-.nav .header-right .header__btn__sign-in {
-  background-color: #1F2E35;
-  border: 1px solid #BCD0E5;
+  border: 1px solid transparent;
   color: #fff;
-}
-.nav .header-right .header__btn__sign-up {
-  border: none;
   background-color: #02897A;
-  border-radius: 5px;
-  color: #fff;
+  transition: 0.5s;
+}
+.nav .header-right .btn:hover {
+  border-color: #fff;
+  background-color: transparent;
 }
 .nav .header-right img {
   padding-left: 12px;
@@ -155,9 +152,14 @@ body .header {
   line-height: 20px;
   padding: 11px 18px;
   border-radius: 5px;
-  border: none;
+  border: 1px solid transparent;
   background-color: #02897A;
   color: #fff;
+  transition: 0.5s;
+}
+.custum button:hover {
+  background-color: transparent;
+  border-color: #fff;
 }
 
 .tariflar {
@@ -193,6 +195,7 @@ body .header {
   background-color: #fff;
   text-align: center;
   color: #22343D;
+  transition: 0.5s;
 }
 .tariflar .tariflar__box .tarif__item h2 {
   text-align: center;
@@ -263,20 +266,20 @@ body .header {
   margin: 38px 0 32px;
   cursor: pointer;
 }
-.tariflar .tariflar__box .premium {
+.tariflar .tariflar__box .tarif__item:hover {
   background-color: #02897A;
   color: #fff;
 }
-.tariflar .tariflar__box .premium .card h1 {
+.tariflar .tariflar__box .tarif__item:hover .card h1 {
   color: #fff;
 }
-.tariflar .tariflar__box .premium .card .card-box span {
+.tariflar .tariflar__box .tarif__item:hover .card .card-box span {
   color: #fff;
 }
-.tariflar .tariflar__box .premium .card .card-box p {
+.tariflar .tariflar__box .tarif__item:hover .card .card-box p {
   color: #E0E0E0;
 }
-.tariflar .tariflar__box .premium button {
+.tariflar .tariflar__box .tarif__item:hover button {
   background-color: #fff;
   color: #02897A;
   cursor: pointer;
@@ -352,11 +355,17 @@ body .header {
   color: #02897A;
   border-radius: 5px;
   background-color: #fff;
-  border: none;
+  border: 1px solid transparent;
   font-size: 20px;
   font-weight: 600;
   line-height: 30px;
   margin-top: 60px;
+  transition: 0.5s;
+}
+.getThis .getThis__left .getThis__btn:hover {
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
 }
 
 .footer {
@@ -435,6 +444,7 @@ body .header {
 .footer .footer__top .footer__signup .footer__form {
   display: flex;
   flex-direction: column;
+  align-items: start;
 }
 .footer .footer__top .footer__signup .footer__form .footer__input {
   width: 325px;
@@ -450,15 +460,19 @@ body .header {
   margin-bottom: 21px;
 }
 .footer .footer__top .footer__signup .footer__form .footer__signupBtn {
-  font-size: 16px;
   font-weight: 700;
-  color: #fff;
-  padding: 8px 15px;
-  border-radius: 5px;
-  background-color: #02897A;
-  border: none;
+  font-size: 16px;
   line-height: 24px;
-  width: 131px;
+  padding: 8px 15px;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background-color: #02897A;
+  transition: 0.5;
+}
+.footer .footer__top .footer__signup .footer__form .footer__signupBtn:hover {
+  background-color: transparent;
+  border-color: #fff;
 }
 .footer .footer__text {
   text-align: center;

@@ -47,24 +47,19 @@ body {
          padding-right: 30px;
       }
       .btn {
-         font-weight: 600;
-         font-size: 16px;
-         line-height: 24px;
+         @include size(600, 16px, 24px);
          padding: 10px 22px;
          border-radius: 5px;
          margin: 0 12px;
          cursor: pointer;
-      }
-      .header__btn__sign-in {
-         background-color: #1F2E35;
-         border: 1px solid #BCD0E5;
+         border: 1px solid transparent;
          color: #fff;
-      }
-      .header__btn__sign-up {
-         border: none;
          background-color: #02897A;
-         border-radius: 5px;
-         color: #fff;
+         transition: 0.5s;
+      }
+      .btn:hover {
+         border-color: #fff;
+         background-color: transparent;
       }
       img {
          padding-left: 12px;
@@ -145,9 +140,14 @@ body {
       @include size(600, 18px, 20px);
       padding: 11px 18px;
       border-radius: 5px;
-      border: none;
+      border: 1px solid transparent;
       background-color: #02897A;
       color: #fff;
+      transition: 0.5s;
+   }
+   button:hover {
+      background-color: transparent;
+      border-color: #fff;
    }
 }
 .tariflar{ 
@@ -179,6 +179,7 @@ body {
          background-color: #fff;
          text-align: center;
          color: #22343D;
+         transition: 0.5s;
          h2 {
             text-align: center;
             font-size: 34px;
@@ -249,7 +250,8 @@ body {
             cursor: pointer;
          }
       }
-      .premium {
+
+      .tarif__item:hover {
          background-color: #02897A;
          color: #fff;
          .card {
@@ -332,11 +334,17 @@ body {
          color: #02897A;
          border-radius: 5px;
          background-color: #fff;
-         border: none;
+         border: 1px solid transparent;
          font-size: 20px;
          font-weight: 600;
          line-height: 30px;
          margin-top: 60px;
+         transition: 0.5s;
+      }
+      .getThis__btn:hover {
+         background-color: transparent;
+         border-color: #fff;
+         color: #fff;
       }
    }
 }
@@ -420,6 +428,7 @@ body {
          .footer__form {
             display: flex;
             flex-direction: column;
+            align-items: start;
             .footer__input {
                width: 325px;
                height: 48px;
@@ -432,16 +441,18 @@ body {
                padding: 10px 128px 10px 15px;
                margin-bottom: 21px;
             }
-            .footer__signupBtn {
-               font-size: 16px;
-               font-weight: 700;
-               color: #fff;
+            .footer__signupBtn { 
+               @include size(700, 16px, 24px);
                padding: 8px 15px;
+               color: #fff;
                border-radius: 5px;
+               border: 1px solid transparent;
                background-color: #02897A;
-               border: none;
-               line-height: 24px;
-               width: 131px;
+               transition: 0.5;
+            }
+            .footer__signupBtn:hover {
+               background-color: transparent;
+               border-color: #fff;
             }
          }
       }
